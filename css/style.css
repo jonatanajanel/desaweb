@@ -1,0 +1,221 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #1f2937;
+    background: #f6f8fb;
+}
+
+main {
+    flex: 1;
+}
+
+.navbar {
+    background: #174ea6 !important;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.12);
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.site-header {
+    color: #fff;
+    background: linear-gradient(135deg, #174ea6, #2563c9);
+}
+
+.site-header .lead {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.header-label {
+    color: #cfe2ff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.header-features span {
+    padding: 0.4rem 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.85rem;
+}
+
+.category-card {
+    position: sticky;
+    top: 1rem;
+    overflow: hidden;
+    border: 0;
+    border-radius: 0.8rem;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.1);
+}
+
+.category-card .card-header {
+    padding: 1.15rem 1rem;
+    color: #fff;
+    border: 0;
+    background: #174ea6;
+}
+
+.category-card .card-header small {
+    display: block;
+    margin-top: 0.25rem;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.72rem;
+}
+
+.category-title {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-weight: 600;
+}
+
+.category-title i {
+    font-size: 1.05rem;
+}
+
+.category-card .list-group-item {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.72rem 1rem;
+    color: #526070;
+    border-color: #edf0f4;
+    font-size: 0.9rem;
+    transition: color 0.15s, background-color 0.15s, padding-left 0.15s;
+}
+
+.category-card .list-group-item i {
+    width: 1.1rem;
+    color: #7b8ba0;
+    text-align: center;
+}
+
+.category-card .list-group-item:hover {
+    padding-left: 1.15rem;
+    color: #174ea6;
+    background: #f0f6ff;
+}
+
+.category-card .list-group-item.active {
+    color: #174ea6;
+    border-color: #d8e7ff;
+    background: #e7f0ff;
+    font-weight: 600;
+}
+
+.category-card .list-group-item.active i {
+    color: #174ea6;
+}
+
+.input-group .form-control,
+.input-group .input-group-text,
+.input-group .btn {
+    min-height: 44px;
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+.video-card {
+    overflow: hidden;
+    border: 0;
+    border-radius: 0.65rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.video-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.14) !important;
+}
+
+.video-description {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.comentario {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+#listaComentarios {
+    max-height: 360px;
+    overflow-y: auto;
+}
+
+#modalVideo .modal-content {
+    overflow: hidden;
+    border: 0;
+    border-radius: 0.75rem;
+}
+
+footer {
+    background: #fff !important;
+}
+
+.comentario-info {
+    color: #6c757d;
+    font-size: 0.8rem;
+}
+
+.comentario-texto {
+    margin: 0.25rem 0;
+}
+
+.respuestas {
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    padding-left: 1rem;
+    border-left: 3px solid #dee2e6;
+}
+
+.respuesta-formulario {
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 767px) {
+    .card-img-top {
+        height: 220px;
+    }
+
+    .category-card {
+        position: static;
+    }
+
+    .category-card .card-header {
+        padding: 0.9rem 1rem;
+    }
+
+    .category-card .card-header small {
+        display: none;
+    }
+
+    #listaCategorias {
+        flex-direction: row;
+        gap: 0.5rem;
+        overflow-x: auto;
+        padding: 0.75rem;
+        background: #fff;
+    }
+
+    .category-card .list-group-item {
+        flex: 0 0 auto;
+        width: auto;
+        padding: 0.5rem 0.75rem;
+        border: 1px solid #dce3ec;
+        border-radius: 2rem !important;
+        white-space: nowrap;
+    }
+
+    .category-card .list-group-item:hover {
+        padding-left: 0.75rem;
+    }
+}
